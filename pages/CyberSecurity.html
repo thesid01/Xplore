@@ -60,7 +60,7 @@
 		}
 
 		.pad{
-  			margin-top:2%;
+  			margin:2px;
 		}
 
 		.shdw{
@@ -139,12 +139,46 @@
 		}
 		.trends img{
 				margin: 15px auto;
-			}
-			#main-video{
+		}
+		#main-video{
 				border-radius: 5px;
-			}
+		}
 		.container img{
 			width: 50%;
+		}
+		iframe{
+			width: 420px;
+			height: 315px;
+			overflow: auto;
+		}
+		.brdr{
+			border:1px solid black;
+			border-radius: 25px;
+		}
+		@media screen and (max-width:768px){
+			iframe{
+				width:95%;
+				height: auto;
+			}
+			.container img{
+				width:100%;
+			}
+		}
+		@media screen and (max-width:426px){
+			.container img{
+			width: 80%;
+			}
+			iframe{
+				width:90%;
+				height:215px;
+			}
+			.brdr{
+				border-width: 0px;
+				border-radius: 0px;
+			}
+			.container img{
+				width:100%;
+			}
 		}
 	</style>
 </head>
@@ -154,7 +188,7 @@
     	<img src="../images/Logo.png" style="margin: -10px auto;">
   	</div>
  	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top sticky-top shdw1">
-      	<a class="navbar-brand mb-0 h1" href="home1.html">Xplore</a>
+      	<a class="navbar-brand mb-0 h1" href="../index.html">Xplore</a>
       	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent" arial-controls="navbarcontent" arial-expanded="false" arial-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       	</button>
@@ -162,7 +196,7 @@
       	<div class="collapse navbar-collapse" id="navbarcontent">
         	<ul class="navbar-nav mr-auto">
           		<li class="nav-item active">
-            		<a class="nav-link" href="home1.html">Home<span class="sr-only">(current)</span></a>
+            		<a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
           		</li>
           		<li class="nav-item">
            			<a class="nav-link" href="CSE.php">CSE</a>
@@ -196,8 +230,8 @@
         </div>
     </nav>
 	<div class="container shdw mar">
-		<div class="row mar">
-			<div class="col-md-6 col-xs-12 justify-content-center vdo border" style="border-radius: 25px;">
+		<div class="row mar pad">
+			<div class="col-md-6 col-xs-12 justify-content-center vdo brdr" style="border-radius: 25px;">
 				<center>
 					<iframe width="90%" height="315" id="main-video" src="https://www.youtube.com/embed/ooJSgsB5fIE" allowtransparency="true" frameborder="0"></iframe>
 				</center>
@@ -210,19 +244,19 @@ Cybersecurity refers to a set of techniques used to protect the integrity of net
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<div class="row">
-			<div class="col-md-12 border " id="v-link" style=" margin: 2px;">
+			<div class="col-md-12 brdr " id="v-link" style=" margin: 2px;">
 				Introduction to Cyber Security <button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(1)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="border-radius: 25px border-;margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="border-radius: 25px border-;margin: 2px;">
 					What is Cyber Security?  <button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(2)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					Cyber Security Skills Employers Want <button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(3)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					Understanding the Basics of Cyber Security to prevent your digital Doomsday <button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(4)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					Career in cybersecurity<button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(5)">Play</button>
 				</div>
 			</div>
@@ -245,7 +279,6 @@ Cybersecurity refers to a set of techniques used to protect the integrity of net
 	<div class="row" style="margin: 5px; padding: 5px;">
 		<div class="col-xs-12 col-md-12">
 			<h4>Trends And Analysis</h4>
-			<img src="" class="border" style="margin: 6px; border-radius: 5px;">
 			<div class="trends">
 				<h6>Types of attack in Business:</h6>
 				<img src="../images/cyber5.png" style="height:auto;"> 
@@ -268,7 +301,7 @@ Cybersecurity refers to a set of techniques used to protect the integrity of net
 	<div class="row">
 		<div class="col-md-4" style="margin: 15px auto;"><b>Important Links</b><br>About Us<br><a href="MeetOurTeam.php" style="color: white;">Contact Us</a><br>CSE</div>
 		<div class="col-md-4" style="margin: 15px auto;"><b><a href="MeetOurTeam.html" style="color: white;">Meet Our Team</a></b><br>Siddharth kumar verma</b><br>Rohan Saxena</b><br>Rushikesh Ghule</b><br>Rishi Aggarwal</div>
-		<div class="col-md-4" style="margin: 15px auto;"><b><a href="home1.html" style="color: white;">Xplore</a></b><br><a href="Trending.html" style="color: white;">Trending and Hot Topics</a></div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../index.html" style="color: white;">Xplore</a></b><br><a href="Trending.html" style="color: white;">Trending and Hot Topics</a></div>
 	</div>
 	<i style="margin: auto 5px;" class="fab fa-instagram"></i> | <i style="margin: auto 5px;" class="fab fa-twitter"></i></center></div></div>
  </div>

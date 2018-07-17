@@ -60,7 +60,7 @@
 		}
 
 		.pad{
-  			margin-top:2%;
+  			margin: 2px;
 		}
 
 		.shdw{
@@ -139,12 +139,46 @@
 		}
 		.trends img{
 				margin: 15px auto;
-			}
-			#main-video{
-				border-radius: 5px;
-			}
+		}
+		#main-video{
+			border-radius: 5px;
+		}
 		.container img{
 			width: 50%;
+		}
+		iframe{
+			width: 420px;
+			height: 315px;
+			overflow: auto;
+		}
+		.brdr{
+			border:1px solid black;
+			border-radius: 25px;
+		}
+		@media screen and (max-width:768px){
+			iframe{
+				width:95%;
+				height: auto;
+			}
+			.container img{
+				width:60%;
+			}
+		}
+		@media screen and (max-width:426px){
+			.container img{
+			width: 80%;
+			}
+			iframe{
+				width:90%;
+				height:215px;
+			}
+			.brdr{
+				border-width: 0px;
+				border-radius: 0px;
+			}
+			.container img{
+				width:100%;
+			}
 		}
 	</style>
 </head>
@@ -196,8 +230,8 @@
         </div>
     </nav>
 	<div class="container shdw mar">
-		<div class="row mar">
-			<div class="col-md-6 col-xs-12 justify-content-center vdo border" style="border-radius: 25px;">
+		<div class="row mar pad">
+			<div class="col-md-6 col-xs-12 justify-content-center vdo brdr" style="border-radius: 25px;">
 				<center>
 					<iframe width="90%" height="315" id="main-video" src="https://www.youtube.com/embed/HdbTrout0Ng" allowtransparency="true" frameborder="0"></iframe>
 				</center>
@@ -210,19 +244,19 @@ Mobile app development is the act or process by which a mobile app is developed 
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<div class="row">
-				<div class="col-md-12 border " id="v-link" style=" margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style=" margin: 2px;">
 				Introduction To Android App Developer  <button class="btn" style="margin: 5px; float: right;"  onclick="videoPlay(1)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="border-radius: 25px border-;margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="border-radius: 25px border-;margin: 2px;">
 					How to Make an Android App   <button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(2)" style="float: left; ">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					How to become an Android Developer <button class="btn" style="margin: 5px; float: right;"  onclick="videoPlay(3)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					What is Cross Platform Development <button  class="btn" style="margin: 5px; float: right;" onclick="videoPlay(4)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					Android development V/s iOS development<button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(5)">Play</button>
 				</div>
 			</div>
@@ -244,7 +278,6 @@ Mobile app development is the act or process by which a mobile app is developed 
 	<div class="row" style="margin: 5px; padding: 5px;">
 		<div class="col-xs-12 col-md-12">
 			<h4>Trends And Analysis</h4>
-			<img src="" class="border" style="margin: 6px; border-radius: 5px;">
 			<div class="trends">
 				<h6>Android App Vs IOS App:</h6>
 				<img src="../images/mobile1.jpg" style="height:auto;"> 

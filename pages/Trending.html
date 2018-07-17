@@ -70,8 +70,7 @@
 		}
 
 		.pad{
-  			margin-top:2%;
-		}
+  			margin:2px;		}
 
 		.shdw{
   			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -161,20 +160,39 @@
 			width: 50%;
 		}
 
+		iframe{
+			width: 420px;
+			height: 315px;
+			overflow: auto;
+		}
+		.brdr{
+			border:1px solid black;
+			border-radius: 25px;
+		}
+		@media screen and (max-width:768px){
+			iframe{
+				width:95%;
+				height: auto;
+			}
+			.container img{
+				width:70%;
+			}
+		}
 		@media screen and (max-width:426px){
 			.container img{
 			width: 80%;
-		}
-		iframe{
-			width:320px;
-			height:215px;
-		}
-		}
-		}
-		@media screen and (max-width:320px){
-		.mar1{
-			margin: 1px;
-		}
+			}
+			iframe{
+				width:90%;
+				height:215px;
+			}
+			.brdr{
+				border-width: 0px;
+				border-radius: 0px;
+			}
+			.container img{
+				width:100%;
+			}
 	}
 	</style>
 </head>
@@ -226,8 +244,8 @@
         </div>
     </nav>
 	<div class="container shdw mar">
-		<div class="row mar" >
-			<div class="col-md-6 col-xs-12 justify-content-center vdo border" style="border-radius: 25px;">
+		<div class="row mar pad" >
+			<div class="col-md-6 col-xs-12 justify-content-center vdo brdr" style="border-radius: 25px;">
 				<center>
 					<iframe width="420" height="315" id="main-video"src="https://www.youtube.com/embed/o2cbErKRb_w?" allowtransparency="true" frameborder="0"></iframe>
 				</center>
@@ -238,38 +256,60 @@
 			</div>
 			<div class="col-md-6 col-xs-12" style="">
 				<div class="row">
-					<div class="col-md-12 mar1 border" id="v-link" style="margin: 2px;">
-					<a href="#l1"><button class="btn" style="margin: 5px;">Read</button></a>Trending and Hot Topics<button class="btn" style="margin: 5px;" onclick="videoPlay(0)">Play</button>
+					<div class="col-md-12 mar1 brdr" id="v-link" style="margin: 2px;">
+					Trending and Hot Topics
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(0)">Play</button>
+					<a href="#l1"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style=" margin: 2px;">
-					<a href="#l2"><button class="btn" style="margin: 5px;">Read</button></a>What is Li-Fi??<button class="btn" style="margin: 5px;" onclick="videoPlay(1)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style=" margin: 2px;">
+					What is Li-Fi??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(1)">Play</button>
+					<a href="#l2"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="border-radius: 25px border-;margin: 2px;">
-					<a href="#l3"><button class="btn" style="margin: 5px;">Read</button></a>What is AI??<button class="btn" style="margin: 5px;" onclick="videoPlay(2)" style="float: left;">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="border-radius: 25px border-;margin: 2px;">
+					What is AI??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(2)" style="float: left;">Play</button>
+					<a href="#l3"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l4"><button class="btn" style="margin: 5px;">Read</button></a>What is Blockchain??<button class="btn" style="margin: 5px;" onclick="videoPlay(3)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is Blockchain??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(3)">Play</button>
+					<a href="#l4"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l5"><button class="btn" style="margin: 5px;">Read</button></a>What is Deep Learning??<button  class="btn" style="margin: 5px;" onclick="videoPlay(4)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is Deep Learning??
+					<div><button  class="btn" style="margin: 5px;" onclick="videoPlay(4)">Play</button>
+					<a href="#l5"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l5"><button class="btn" style="margin: 5px;">Read</button></a>AI Vs Deep Learning Vs Machine Learning??<button class="btn" style="margin: 5px;"  onclick="videoPlay(5)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					AI Vs Deep Learning Vs Machine Learning??
+					<div><button class="btn" style="margin: 5px;"  onclick="videoPlay(5)">Play</button>
+					<a href="#l5"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l6"><button class="btn" style="margin: 5px;">Read</button></a>What is Big Data Analytics??<button class="btn" style="margin: 5px;"  onclick="videoPlay(6)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is Big Data Analytics??
+					<div><button class="btn" style="margin: 5px;"  onclick="videoPlay(6)">Play</button>
+					<a href="#l6"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l7"><button class="btn" style="margin: 5px;">Read</button></a>What is Bio Informatics??<button class="btn" style="margin: 5px;" onclick="videoPlay(7)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is Bio Informatics??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(7)">Play</button>
+					<a href="#l7"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l8"><button class="btn" style="margin: 5px;">Read</button></a>What is CyberSecurity??<button class="btn" style="margin: 5px;" onclick="videoPlay(8)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is CyberSecurity??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(8)">Play</button>
+					<a href="#l8"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l9"><button class="btn" style="margin: 5px;">Read</button></a>What is Virtual Reality??<button class="btn" style="margin: 5px;" onclick="videoPlay(9)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is Virtual Reality??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(9)">Play</button>
+					<a href="#l9"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
-				<div class="col-md-12 border mar1" id="v-link" style="margin: 2px;">
-					<a href="#l10"><button class="btn" style="margin: 5px;">Read</button></a>What is Augmented Reality??<button class="btn" style="margin: 5px;" onclick="videoPlay(10)">Play</button>
+				<div class="col-md-12 brdr mar1" id="v-link" style="margin: 2px;">
+					What is Augmented Reality??
+					<div><button class="btn" style="margin: 5px;" onclick="videoPlay(10)">Play</button>
+					<a href="#l10"><button class="btn" style="margin: 5px;">Read</button></a></div>
 				</div>
 				<div style="float: right; font-size: 12px; "><b>source</b>:YouTube</div>
 			</div>
@@ -398,10 +438,10 @@
 <div class="footer" style="width:100%;">
 	<div class="row">
 		<div class="col-md-4" style="margin: 15px auto;"><b>Important Links</b><br>About Us<br><a href="../pages/MeetOurTeam.html" style="color: white;">Contact Us</a><br>CSE</div>
-		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../pages/MeetOurTeam.html" style="color: white;">Meet Our Team</a></b><br>Siddharth kumar verma</b><br>Rohan Saxena</b><br>Rushikesh Ghule</b><br>Rishi Aggarwal</div>
-		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../index.html" style="color: white;">Xplore</a></b><br><a href="../pages/WebDeveloper.html" style="color: white;">Web Developer</a><br><a href="../pages/CloudComputing.html" style="color: white;">Cloud computing</a></</div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../pages/MeetOurTeam.html" style="color: white;">Meet Our Team</a></b><br>Siddharth kumar verma<br>Rohan Saxena<br>Rushikesh Ghule<br>Rishi Aggarwal</div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../index.html" style="color: white;">Xplore</a></b><br><a href="../pages/WebDeveloper.html" style="color: white;">Web Developer</a><br><a href="../pages/CloudComputing.html" style="color: white;">Cloud computing</a></div>
 	</div>
-	<i style="margin: auto 5px;" class="fab fa-instagram"></i> | <i style="margin: auto 5px;" class="fab fa-twitter"></i></center></div></div>
+	<center><i style="margin: auto 5px;" class="fab fa-instagram"></i> | <i style="margin: auto 5px;" class="fab fa-twitter"></i></center></div></div>
  </div>
 </body>
 </html>

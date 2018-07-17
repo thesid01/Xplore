@@ -112,6 +112,7 @@
 		#deco{
 			border-left: 6px solid lightgrey;
 		    background-color: lightgrey;
+		    padding:2px;
 		}
 		#deco:hover{
 			border-left: 6px solid black;
@@ -125,10 +126,51 @@
 		}
 		.trends img{
 				margin: 15px auto;
+		}
+		#main-video{
+			border-radius: 5px;
+		}
+		.brdr{
+			border:1px solid black;
+			border-radius: 25px;
+		}
+		.pad{
+			margin:2px;
+		}
+		button{
+			float: right;
+		}
+		iframe{
+			width: 420px;
+			height: 315px;
+			overflow: auto;
+		}
+		@media screen and (max-width:768px){
+			iframe{
+				width:95%;
+				height: auto;
 			}
-			#main-video{
-				border-radius: 5px;
+			.container img{
+				width:100%;
 			}
+		}
+		@media screen and (max-width:426px){
+			.container img{
+			width: 80%;
+			}
+			iframe{
+				width:90%;
+				height:215px;
+			}
+			.brdr{
+				border-width: 0px;
+				border-radius: 0px;
+			}
+			.container img{
+				width:100%;
+			}
+		}
+		
 	</style>
 </head>
 <body style="height:1500px">
@@ -179,23 +221,23 @@
         </div>
     </nav>
 	<div class="container shdw mar">
-		<div class="row mar">
-			<div class="col-md-6 col-xs-12 justify-content-center vdo border" style="border-radius: 25px;">
+		<div class="row mar pad">
+			<div class="col-md-6 col-xs-12 justify-content-center vdo brdr">
 				<center>
-					<iframe width="420" height="315" id="main-video"src="https://www.youtube.com/embed/jOhbTAU4OPI?" allowtransparency="true" frameborder="0"></iframe>
+					<iframe id="main-video"src="https://www.youtube.com/embed/jOhbTAU4OPI?" allowtransparency="true" frameborder="0"></iframe>
 				</center>
 				<div class="col-md-12 col-xs-12 center">
 					<h4>Description</h4><p><span><i class="fa fa-quote-left fa-1x"></i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.</p>
 				</div>
 			</div>
-			<div class="col-md-6 col-xs-12">
+			<div class="col-md-6 col-xs-12 ">
 				<div class="row">
-				<div class="col-md-12 border " id="v-link" style=" margin: 2px;">Cloud Computing for beginners - What is cloud ?<button class="btn" style="margin: 5px;"  onclick="videoPlay(1)">Play</button>
+				<div class="col-md-12 brdr " id="v-link" style=" margin: 2px;">Cloud Computing for beginners - What is cloud ?<button class="btn" style="margin: 5px;"  onclick="videoPlay(1)">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="border-radius: 25px border-;margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="border-radius: 25px border-;margin: 2px;">
 					Cloud Computing Tutorial for Beginners <button class="btn" style="margin: 5px;" onclick="videoPlay(2)" style="float: left;">Play</button>
 				</div>
-				<div class="col-md-12 border " id="v-link" style="margin: 2px;">
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
 					What is cloud computing<button class="btn" style="margin: 5px;"  onclick="videoPlay(3)">Play</button>
 				</div>
 			</div>
@@ -206,7 +248,7 @@
 		<div class="col-xs-12 col-md-12">
 			<ul>
 				<li style="list-style: none;"><h5>Learn about CLoud Computing...</h5></li>
-				<li id="deco"><a href="https://hackernoon.com/cloud-computing-for-beginners-85d168959afb" target="_blank">Cloud Computing for Beginners</a><h7><b>source:</b>hackernoon.com</h7></li>
+				<li id="deco"><a href="https://hackernoon.com/cloud-computing-for-beginners-85d168959afb" target="_blank">Cloud Computing for Beginners</a><br><h7><b>source:</b>hackernoon.com</h7></li>
 				<li id="deco"><a href="https://medium.com/aws-enterprise-collection/the-fast-and-the-furious-how-the-evolution-of-cloud-computing-is-accelerating-builder-velocity-d4282d74a370" target="_blank"> The Fast and the Furious: How the Evolution of Cloud Computing Is Accelerating Builder Velocity</a><h7><b>source:</b>medium.com</h7></li>
 				
 			</ul>
@@ -216,7 +258,7 @@
 	<div class="row" style="margin: 5px; padding: 5px;">
 		<div class="col-xs-12 col-md-12">
 			<h4>Treands And Analysis</h4>
-			<img src="" class="border" style="margin: 6px; border-radius: 5px;">
+			<br>
 			<div class="trends">
 				<img src="../images/clouscomputing1.png">
 			</div>
