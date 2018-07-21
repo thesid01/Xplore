@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Project</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	<script>
+  		function videoPlay(argument) {
+  			// body...
+  			var s=document.getElementById("main-video");
+  			if(argument==1){
+  				s.src="https://www.youtube.com/embed/YS-QvfCZWvc?";
+  			}else if (argument==2) {
+  				s.src="https://www.youtube.com/embed/videoseries?list=PLGvfHSgImk4aweyWlhBXNF6XISY3um82_";
+  			}
+
+  		}
+  	</script>
+  	<style>
+		.button {
+	    	background-color: #4CAF50;
+	   		border: none;
+	    	color: white;
+	    	padding: 15px 32px;
+	    	text-align: center;
+	    	text-decoration: none;
+	    	display: inline-block;
+	    	font-size: 16px;
+	   	 	margin-left:auto;
+		    margin-right:auto;
+    		cursor: pointer;
+		}
+
+		.footer {
+ 			left: 0;
+		    bottom: 0;
+	    	width: 100%;
+   			background-color: black;
+    		color: white;
+    		text-align: center;
+		}
+
+		.pad{
+  			margin-top:2%;
+		}
+
+		.container img{
+			width: 50%;
+		}
+
+		.shdw{
+  			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		#v-link{
+			border-radius: 25px;
+			border-top-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+		#v-link:hover{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.mar{
+			padding:1%;
+		}
+		.rad
+		{
+			radius:50%;
+		}
+		.btn-circle {
+			width: 30px;
+			height: 30px;
+  			text-align: center;
+  			padding: 6px 0;
+  			font-size: 12px;
+  			line-height: 1.428571429;
+  			border-radius: 15px;
+		}
+		.btn-circle.btn-lg {
+  			width: 50px;
+  			height: 50px;
+  			padding: 10px 16px;
+  			font-size: 18px;
+  			line-height: 1.33;
+  			border-radius: 25px;
+		}
+		.btn-circle.btn-xl {
+  			width: 70px;
+  			height: 70px;
+  			padding: 10px 16px;
+  			font-size: 24px;
+  			line-height: 1.33;
+  			border-radius: 35px;
+		}
+		li{
+			margin: 7px;
+			padding: 4px;
+		}
+		a{
+			color: black;
+		}
+		a:hover{
+			text-decoration: none;
+			color: black;
+		}
+		#deco{
+			border-left: 6px solid lightgrey;
+		    background-color: lightgrey;
+		    padding:2px;
+		}
+		#deco:hover{
+			border-left: 6px solid black;
+		    background-color: lightgrey;
+		}
+		.vdo{
+			padding: 1%;
+		}
+		.trends{
+			text-align: center;
+		}
+		.trends img{
+				margin: 15px auto;
+		}
+		#main-video{
+			border-radius: 5px;
+		}
+		.brdr{
+			border:1px solid black;
+			border-radius: 25px;
+		}
+		.pad{
+			margin:2px;
+		}
+		button{
+			float: right;
+		}
+		iframe{
+			width: 420px;
+			height: 315px;
+			overflow: auto;
+		}
+		@media screen and (max-width:992px){
+			iframe{
+				width:95%;
+				height: auto;
+			}
+			.container img{
+				width:100%;
+			}
+		}
+		@media screen and (max-width:426px){
+			.container img{
+			width: 80%;
+			}
+			iframe{
+				width:90%;
+				height:215px;
+			}
+			.brdr{
+				border-width: 0px;
+				border-radius: 0px;
+			}
+			.container img{
+				width:100%;
+			}
+		}
+		
+	</style>
+</head>
+<body style="height:1500px">
+  	<div class="container-fluid">
+    	<br>
+    	<img src="../images/Logo.png" style="margin: -10px auto;">
+  	</div>
+ 	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top sticky-top shdw1">
+      	<a class="navbar-brand mb-0 h1" href="../index.html">Xplore</a>
+      	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent" arial-controls="navbarcontent" arial-expanded="false" arial-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      	</button>
+      
+      	<div class="collapse navbar-collapse" id="navbarcontent">
+        	<ul class="navbar-nav mr-auto">
+          		<li class="nav-item active">
+            		<a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+          		</li>
+          		<li class="nav-item">
+           			<a class="nav-link" href="../pages/Jobs.html">CSE</a>
+         		</li>
+          		<li class="nav-item dropdown">
+            		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          				<a class="dropdown-item" href="#">About US</a>
+          				<a class="dropdown-item" href="../pages/MeetOurTeam.html">Contact Us</a>
+          				<div class="dropdown-divider"></div>
+        			</div>
+          		</li>
+        	</ul>
+        	<ul class="navbar-nav mr-auto">
+          		<li class="nav-item">
+            		<a class="nav-link active" href="../pages/loginpage.html"><i class="fas fa-sign-in-alt"></i> Sign In<span class="sr-only">(current)</span></a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link active" href="../pages/loginpage.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+         		</li>          
+        	</ul>
+        	<form class="form-inline my-2 my-lg-0">
+        	 	<div class="input-group">
+          			<div class="input-group-prepend">
+           				<span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+          			</div>
+          			<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+         		</div>
+          		<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-arrow-circle-right"></i></button>
+    		</form>
+        </div>
+    </nav>
+	<div class="container shdw mar">
+		<div class="row mar pad">
+			<div class="col-md-6 col-xs-12 justify-content-center vdo brdr">
+				<center>
+					<iframe id="main-video"src="https://www.youtube.com/embed/YS-QvfCZWvc?" allowtransparency="true" frameborder="0"></iframe>
+				</center>
+				<div class="col-md-12 col-xs-12 center">
+					<h4>Description</h4><p><span><i class="fa fa-quote-left fa-1x"></i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Distributed computing is a field of computer science that studies distributed systems. A distributed system is a system whose components are located on different networked computers, which then communicate </p>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12 ">
+				<div class="row">
+				<div class="col-md-12 brdr " id="v-link" style=" margin: 2px;">Introduction to Distributed computing<button class="btn" style="margin: 5px;"  onclick="videoPlay(1)">Play</button>
+				</div>
+				<div class="col-md-12 brdr " id="v-link" style="border-radius: 25px border-;margin: 2px;">
+					Udacity Online Course.
+					<button class="btn" style="margin: 5px;" onclick="videoPlay(2)" style="float: left;">Play</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row" style="margin: 5px; padding: 5px;">
+		<div class="col-xs-12 col-md-12">
+			<ul>
+				<li style="list-style: none;"><h5>Learn about Distributed Computing...</h5></li>
+				<li id="deco"><a href="https://medium.com/sarccom/distributed-system-syllabus-adbcedf8dba" target="_blank">An Introduction to Distributed Computing</a><br><h7><b>source:</b>medium.org</h7></li>
+				<li id="deco"><a href="https://blog.computes.com/distributed-computing-via-ipfs-83a30b6ef8f1" target="_blank">Distributed Computing via IPFS” @chrismatthieu </a><br><h7><b>source:</b>blog.com</h7></li>
+				<li id="deco"><a href="https://notamonadtutorial.com/interview-with-brad-chamberlain-about-chapel-a-productive-parallel-programming-language-8f4127eeb721" target="_blank">Interview with Brad Chamberlain about a productive parallel programming language called Chapel” @unbalancedparen</a><br><h7><b>source:</b>notamonadtutorial.com</h7></li>
+				<li id="deco"><a href="https://medium.com/rough-draft-ventures/what-a-distributed-computing-veteran-can-teach-our-student-founders-c5aad67b8f16" target="_blank">“What a Distributed Computing Veteran Can Teach Our Student Founders” @Np_bartlett</a><br><h7><b>source:</b>medium.org</h7></li>
+				<li id="deco"><a href="https://blog.computes.com/distributed-computed-centralized-vs-decentralized-c1d21202bde8" target="_blank"> The Distributed Computing: Centralized vs Decentralized</a><br><h7><b>source:</b>medium.com</h7></li>
+				<div class="row" style="margin: 5px; padding: 5px;">
+		<div class="col-xs-12 col-md-12">
+			<h4>Treands And Analysis</h4>
+			<div class="trends">
+				<img src="../images/distributed.jpg">
+				<img src="../images/Parallel2.jpg">
+			</div>
+		</div>
+	</div>
+			</ul>
+		</div>
+	</div>
+<hr>
+<div class="footer" style="width:100%;">
+	<div class="row">
+		<div class="col-md-4" style="margin: 15px auto;"><b>Important Links</b><br>About Us<br><a href="../pages/MeetOurTeam.html" style="color: white;">Contact Us</a><br>CSE</div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../MeetOurTeam.html" style="color: white;">Meet Our Team</a></b><br>Siddharth kumar verma</b><br>Rohan Saxena</b><br>Rushikesh Ghule</b><br>Rishi Aggarwal</div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../index.html" style="color: white;">Xplore</a></b><br><a href="../pages/Trending.html" style="color: white;">Trending and Hot Topics</a></div>
+	</div>
+	<i style="margin: auto 5px;" class="fab fa-instagram"></i> | <i style="margin: auto 5px;" class="fab fa-twitter"></i></center></div></div>
+ </div>
+</body>
+</html>
