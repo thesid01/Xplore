@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Project</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	<script>
+  		function videoPlay(argument) {
+  			// body...
+  			var s=document.getElementById("main-video");
+       
+  			if(argument==1){
+  				s.src="https://www.youtube.com//embed/wthBcVFouzY";
+          document.getElementById("p1").innerHTML="What is Computer Vision  ? ";
+  			}else if (argument==2) {
+  				s.src="https://www.youtube.com/embed/gTJRPsk6gGs";
+           document.getElementById("p1").innerHTML="Why Study Computer Vision ?";
+  			}
+  			else if (argument==3) {
+  				s.src="https://www.youtube.com/embed/CLOAswsxudo";
+           document.getElementById("p1").innerHTML="From Developer to Data Scientist";
+  			}
+        else if (argument==4) {
+  				s.src="https://www.youtube.com/embed/Cgxsv1riJhI";
+           document.getElementById("p1").innerHTML="How computers learn to recognize objects instantly | Joseph Redmon";
+  			}
+        else if (argument==5) {
+  				s.src="https://www.youtube.com/embed/OcycT1Jwsns";
+           document.getElementById("p1").innerHTML="How Computer Vision Works";
+  			}
+  		}
+  	</script>
+  	<style>
+		.button {
+	    	background-color: #4CAF50;
+	   		border: none;
+	    	color: white;
+	    	padding: 15px 32px;
+	    	text-align: center;
+	    	text-decoration: none;
+	    	display: inline-block;
+	    	font-size: 16px;
+	   	 	margin-left:auto;
+		    margin-right:auto;
+    		cursor: pointer;
+		}
+		.footer {
+ 			left: 0;
+		    bottom: 0;
+	    	width: 100%;
+   			background-color: black;
+    		color: white;
+    		text-align: center;
+		}
+		.pad{
+  			margin: 2px;
+		}
+		.shdw{
+  			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		#v-link{
+			border-radius: 25px;
+			border-top-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+		#v-link:hover{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.mar{
+			padding:1%;
+		}
+		.rad
+		{
+			radius:50%;
+		}
+		.btn-circle {
+			width: 30px;
+			height: 30px;
+  			text-align: center;
+  			padding: 6px 0;
+  			font-size: 12px;
+  			line-height: 1.428571429;
+  			border-radius: 15px;
+		}
+		.btn-circle.btn-lg {
+  			width: 50px;
+  			height: 50px;
+  			padding: 10px 16px;
+  			font-size: 18px;
+  			line-height: 1.33;
+  			border-radius: 25px;
+		}
+		.btn-circle.btn-xl {
+  			width: 70px;
+  			height: 70px;
+  			padding: 10px 16px;
+  			font-size: 24px;
+  			line-height: 1.33;
+  			border-radius: 35px;
+		}
+      ul{
+        padding:0;
+        margin:0;
+        
+      }
+		li{
+			margin: 7px;
+			padding: 4px;
+      list-style-type:none;
+		}
+		a{
+			color: black;
+		}
+		a:hover{
+			text-decoration: none;
+			color: black;
+		}
+		#deco{
+			border-left: 6px solid lightgrey;
+		    background-color: lightgrey;
+		}
+		#deco:hover{
+			border-left: 6px solid black;
+		    background-color: lightgrey;
+		}
+		.vdo{
+			padding: 1%;
+		}
+		.trends{
+			text-align: center;
+		}
+		.trends img{
+				margin: 15px auto;
+		}
+		#main-video{
+			border-radius: 5px;
+		}
+		.container img{
+			width: 50%;
+		}
+		iframe{
+			width: 420px;
+			height: 315px;
+			overflow: auto;
+		}
+		.brdr{
+			border:1px solid black;
+			border-radius: 25px;
+		}
+		@media screen and (max-width:992px){
+			iframe{
+				width:95%;
+				height: auto;
+			}
+			.container img{
+				width:60%;
+			}
+		}
+		@media screen and (max-width:426px){
+			
+			iframe{
+				width:90%;
+				height:215px;
+			}
+			.brdr{
+				border-width: 0px;
+				border-radius: 0px;
+			}
+			.container img{
+				width:100%;
+			}
+		}
+	</style>
+</head>
+<body style="height:1500px">
+  
+  	<div class="container-fluid">
+      <div class="container">
+    	<br>
+    	<img src="../images/Logo.png" style="margin: -10px auto;">
+  	</div>
+ 	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top sticky-top shdw1">
+      	<a class="navbar-brand mb-0 h1" href="../index.html">Xplore</a>
+      	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent" arial-controls="navbarcontent" arial-expanded="false" arial-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      	</button>
+      
+      	<div class="collapse navbar-collapse" id="navbarcontent">
+        	<ul class="navbar-nav mr-auto">
+          		<li class="nav-item active">
+            		<a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+          		</li>
+          		<li class="nav-item">
+           			<a class="nav-link" href="../pages/Jobs.html">CSE</a>
+         		</li>
+          		<li class="nav-item dropdown">
+            		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          				<a class="dropdown-item" href="#">About US</a>
+          				<a class="dropdown-item" href="../pages/MeetOurTeam.html">Contact Us</a>
+          				<div class="dropdown-divider"></div>
+        			</div>
+          		</li>
+        	</ul>
+        	<ul class="navbar-nav mr-auto">
+          		<li class="nav-item">
+            		<a class="nav-link active" href="../pages/loginpage.html"><i class="fas fa-sign-in-alt"></i> Sign In<span class="sr-only">(current)</span></a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link active" href="../pages/loginpage.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+         		</li>          
+        	</ul>
+        	<form class="form-inline my-2 my-lg-0">
+        	 	<div class="input-group">
+          			<div class="input-group-prepend">
+           				<span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+          			</div>
+          			<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+         		</div>
+          		<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-arrow-circle-right"></i></button>
+    		</form>
+        </div>
+    </nav>
+	<div class="container shdw mar">
+		<div class="row mar pad">
+			<div class="col-md-6 col-xs-12 justify-content-center vdo brdr" style="border-radius: 25px;">
+				<center>
+					<iframe width="90%" height="315" id="main-video" src="https://www.youtube.com/embed/wthBcVFouzY" allowtransparency="true" frameborder="0"></iframe>
+				</center>
+				<div class="col-md-12 col-xs-12 center" id="description">
+					<h4>Description</h4><div><span><i class="fa fa-quote-left fa-1x"></i></span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="p1">
+Computer vision is an interdisciplinary field that deals with how computers can be made for gaining high-level understanding from digital images or videos.
+          </p></div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="row">
+				<div class="col-md-12 brdr " id="v-link" style=" margin: 2px;">
+				What is Computer Vision  ?<button class="btn" style="margin: 5px; float: right;"  onclick="videoPlay(1)">Play</button>
+				</div>
+				<div class="col-md-12 brdr " id="v-link" style="border-radius: 25px  border-;margin: 2px;">
+					Why Study Computer Vision ?<button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(2)" style="float: left; ">Play</button>
+				</div>
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
+					MIT Computer Vision <button class="btn" style="margin: 5px; float: right;"  onclick="videoPlay(3)">Play</button>
+				</div>
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
+					How computers learn to recognize objects
+<button  class="btn" style="margin: 5px; float: right;" onclick="videoPlay(4)">Play</button>
+				</div>
+				<div class="col-md-12 brdr " id="v-link" style="margin: 2px;">
+					How Computer Vision Works<button class="btn" style="margin: 5px; float: right;" onclick="videoPlay(5)">Play</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row" style="margin: 5px; padding: 5px;">
+		<div class="col-xs-12 col-md-12">
+			<ul>
+				<li style="list-style: none;"><h5>Know More by Professional Developer Article</h5></li>
+				
+				<li id="deco"><a href="https://medium.com/readers-writers-digest/beginners-guide-to-computer-vision-23606224b720" target="_blank"> Beginner’s Guide to Computer Vision</a></li>
+				<li id="deco"><a href="https://blog.goodaudience.com/a-year-in-computer-vision-part-1-of-4-eaeb040b6f46" target="_blank">A Year in Computer Vision 
+        <li id="deco"><a href="https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606" target="_blank">Object Detection with 10 lines of code
+</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row" style="margin: 5px; padding: 5px;">
+		<div class="col-xs-12 col-md-12">
+			<h4>Trends And Analysis</h4>
+			<div class="trends">
+        <h6>Trend of research in different area:</h6>
+				<img src="https://neelshah18.github.io/images/arxiv_pic/trend.png" style="height:auto;">
+				<img src="http://www.abnewswire.com/pressreleases/wp-content/uploads/2018/03/1520255898.png" style="height:auto;">
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<hr>
+<div class="footer" style="width:100%;">
+	<div class="row">
+		<div class="col-md-4" style="margin: 15px auto;"><b>Important Links</b><br>About Us<br><a href="../pages/MeetOurTeam.html" style="color: white;">Contact Us</a><br>CSE</div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../pages/MeetOurTeam.html" style="color: white;">Meet Our Team</a></b><br>Siddharth kumar verma</b><br>Rohan Saxena</b><br>Rushikesh Ghule</b><br>Rishi Agrawal</div>
+		<div class="col-md-4" style="margin: 15px auto;"><b><a href="../index.html" style="color: white;">Xplore</a></b><br><a href="../pages/Trending.html" style="color: white;">Trending and Hot Topics</a></div>
+	</div>
+	<i style="margin: auto 5px;" class="fab fa-instagram"></i> | <i style="margin: auto 5px;" class="fab fa-twitter"></i></center></div></div>
+ 
+</div>
+</body>
+</html>
